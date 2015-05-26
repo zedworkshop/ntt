@@ -84,7 +84,7 @@ get_header(); ?>
 						<ul class="[ list-reset large bold ]">
 						<?php
 						wp_list_categories([
-							'orderby' => 'name',
+							'orderby' => 'ID',
 							'title_li' => '',
 							'child_of' => get_cat_ID( 'Categories' )
 						])
@@ -98,7 +98,7 @@ get_header(); ?>
 						<ul class="[ list-reset large bold ]">
 						<?php
 						wp_list_categories([
-							'orderby' => 'name',
+							'orderby' => 'ID',
 							'title_li' => '',
 							'child_of' => get_cat_ID( 'Seasons' )
 						])
