@@ -1,0 +1,64 @@
+/*
+
+	Booking Page
+
+*/
+
+.page-template-page-book {
+
+	.siteheader {
+		background: transparent;
+		margin-bottom: 0;
+		width: 100%;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+
+	.main-navigation {
+		.button {
+			color: #fff;
+		}
+	}
+
+}
+
+.hero-booking {
+	background-image: url(../img/bg-book.jpg);
+	background-repeat: none;
+	background-position: center top;
+
+	padding-top: 35%;
+	padding-bottom: 10%;
+
+	position: relative;
+
+	&:after {
+		content: '';
+		display: block;
+		background: rgba($brand-secondary, 0.5);
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+
+		height: 100%;
+		width: 100%;
+	}
+
+	.hero-title {
+		max-width: 14em;
+		margin-left: auto;
+		margin-right: auto;
+
+		position: relative;
+		z-index: 2;
+
+		@media #{$breakpoint-lg} {
+			font-size: $h1 * 1.2;
+		}
+	}
+}

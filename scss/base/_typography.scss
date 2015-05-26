@@ -1,0 +1,19 @@
+h1 {
+	font-family: $serif;
+}
+
+.serif {
+	font-family: $serif;
+}
+
+.xsmall {
+	font-size: 12px;
+}
+
+.small {
+	font-size: 13px;
+}
+
+.large {
+	font-size: $h4 * 1.3;
+}

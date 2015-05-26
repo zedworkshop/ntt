@@ -1,0 +1,17 @@
+/*
+
+	Navigation
+
+*/
+
+.main-navigation {
+
+	@media #{$breakpoint-md} {
+
+		.button {
+			margin-left: $space-2;
+			margin-right: $space-2;
+		}
+
+	}
+}

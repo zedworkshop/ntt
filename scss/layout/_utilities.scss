@@ -1,0 +1,67 @@
+/*
+
+Typography
+
+*/
+
+.brand-primary {
+	color: $brand-primary;
+
+	&-light {
+		color: $brand-primary-light;
+	}
+}
+
+.brand-secondary {
+	color: $brand-secondary;
+}
+
+.brand-tertiary {
+	color: $brand-tertiary;
+}
+
+.dark {
+	color: #444;
+}
+
+/*
+
+Backgrounds
+
+*/
+
+.bg-brand-primary {
+	background-color: $brand-primary;
+}
+
+.bg-grad {
+	background: linear-gradient(to bottom, rgba(#000,0.5), rgba(#000,0));
+}
+
+
+/*
+
+Patterns
+
+*/
+
+.pattern-d-g {
+	background: url(../img/pattern-dimension-grey.png);
+}
+
+.pattern-d-y {
+	background: url(../img/pattern-dimension-yellow.png);
+}
+
+
+/*
+
+Pointer Events
+
+*/
+
+.pointer-none {
+	pointer-events: none;
+}
+
+

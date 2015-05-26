@@ -1,0 +1,28 @@
+input,
+select,
+textarea {
+	max-width: 100%;
+}
+
+.rangeval-wrapper {
+	display: block;
+	position: relative;
+	text-align: center;
+
+	.rangeval {
+		font-size: $h3;
+		font-weight: bold;
+	}
+}
+
+// Contact Forms 7
+
+span.wpcf7-not-valid-tip {
+	font-size: 13px;
+}
+
+div.wpcf7-validation-errors {
+	border: none;
+	padding: $space-2;
+	background: lighten(red, 45);
+}
