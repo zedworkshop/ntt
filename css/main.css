@@ -2556,7 +2556,7 @@ Carousel
   .single-post .post-thumbnail img {
     height: auto !important;
     width: auto !important; }
-.single-post .widget_text {
+.single-post .single-newsletter, .single-post .widget_text {
   width: 100%; }
 @media (min-width: 40em) {
   .single-post .post {
