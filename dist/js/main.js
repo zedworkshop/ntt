@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){!function(a,n,e){a("input[type=range]").each(function(){var n=a(this),e=(n.val(),a("<span />").addClass("rangeval-wrapper")),t=a("<span />").addClass("rangeval").appendTo(e);n.after(e),n.on("change input range:update",function(){var n=a(this).val();t.text("$"+n)}),n.trigger("range:update")})}(jQuery,window)});

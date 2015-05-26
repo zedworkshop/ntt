@@ -17,7 +17,7 @@
 		<div class="[ container ]">
 			<div class="[ clearfix ]">
 
-				<div class="[ sm-col sm-col-8 px2 ] site-info">
+				<div class="[ sm-col sm-col-6 px2 ] site-info">
 
 					<p class="[ small gray ]">Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></p>
 
@@ -68,10 +68,16 @@
 						<li class="[ mb1 ]"><a class="[ gray ]" href="#">NTT on Instagram</a></li>
 					</ul>
 
+				</div>
+
+				<div class="[ sm-col sm-col-2 ]">
+
 					<div
 					  class="fb-like"
 					  data-share="true"
-					  data-width="450"
+					  data-width="200"
+					  data-layout="button_count"
+					  data-colorscheme="dark"
 					  data-show-faces="true">
 					</div>
 
