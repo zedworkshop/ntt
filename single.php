@@ -100,4 +100,5 @@ get_header(); ?>
 		</div><!-- .clearfix -->
 	</div><!-- .content-area -->
 
+
 <?php get_footer(); ?>

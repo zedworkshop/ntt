@@ -78,7 +78,7 @@
 				<div class="break-icon"><img alt="" src="<?php echo get_template_directory_uri(); ?>/dist/img/icon-grey.png" /></div>
 			</div>
 
-			<div>
+			<div class="single-newsletter">
 			<?php get_template_part( 'footer', 'newsletter' ); ?>
 			</div>
 

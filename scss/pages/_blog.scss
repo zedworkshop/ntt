@@ -119,6 +119,10 @@
 		}
 	}
 
+	.widget_text {
+		width: 100%;
+	}
+
 	@media #{$breakpoint-sm} {
 
 		.post {
