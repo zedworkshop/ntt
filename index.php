@@ -88,7 +88,7 @@ get_header(); ?>
 							'title_li' => '',
 							'hide_empty' => 0,
 							'child_of' => get_cat_ID( 'Categories' )
-						])
+						]);
 						?>
 						</ul>
 					</div>
@@ -103,7 +103,7 @@ get_header(); ?>
 							'title_li' => '',
 							'hide_empty' => 0,
 							'child_of' => get_cat_ID( 'Seasons' )
-						])
+						]);
 						?>
 						</ul>
 					</div>

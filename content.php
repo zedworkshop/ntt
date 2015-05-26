@@ -68,7 +68,7 @@
 		</div>
 
 		<div class="[ sm-col sm-col-3 ]">
-			social
+			<!-- social -->
 		</div>
 	</div><!-- .entry-content -->
 

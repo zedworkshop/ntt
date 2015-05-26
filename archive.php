@@ -85,10 +85,11 @@ get_header(); ?>
 					<ul class="[ list-reset large bold ]">
 					<?php
 					wp_list_categories([
-						'orderby' => 'name',
-						'include' => '3,6',
-						'title_li' => ''
-					])
+						'orderby' => 'ID',
+						'title_li' => '',
+						'hide_empty' => 0,
+						'child_of' => get_cat_ID( 'Categories' )
+					]);
 					?>
 					</ul>
 				</div>
@@ -99,10 +100,11 @@ get_header(); ?>
 					<ul class="[ list-reset large bold ]">
 					<?php
 					wp_list_categories([
-						'orderby' => 'name',
-						// 'include' => '2,3',
-						'title_li' => ''
-					])
+						'orderby' => 'ID',
+						'title_li' => '',
+						'hide_empty' => 0,
+						'child_of' => get_cat_ID( 'Seasons' )
+					]);
 					?>
 					</ul>
 				</div>
