@@ -85,8 +85,8 @@ get_header(); ?>
 						<?php
 						wp_list_categories([
 							'orderby' => 'name',
-							'include' => '3,6',
-							'title_li' => ''
+							'title_li' => '',
+							'child_of' => get_cat_ID( 'Categories' )
 						])
 						?>
 						</ul>
@@ -99,8 +99,8 @@ get_header(); ?>
 						<?php
 						wp_list_categories([
 							'orderby' => 'name',
-							// 'include' => '2,3',
-							'title_li' => ''
+							'title_li' => '',
+							'child_of' => get_cat_ID( 'Seasons' )
 						])
 						?>
 						</ul>
