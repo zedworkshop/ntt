@@ -68,6 +68,13 @@
 						<li class="[ mb1 ]"><a class="[ gray ]" href="#">NTT on Instagram</a></li>
 					</ul>
 
+					<div
+					  class="fb-like"
+					  data-share="true"
+					  data-width="450"
+					  data-show-faces="true">
+					</div>
+
 				</div>
 
 			</div>

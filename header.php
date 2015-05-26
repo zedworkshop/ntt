@@ -13,8 +13,31 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
+
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
+	<link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon.ico">
+
+    <!-- SEO -->
+    <meta name="description" content="Nancee's Travelling Table is a hands-on, gourmet dinner party experience, hosted by Nancee Campbell.">
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="fb:admins" content="586038254"/>
+    <meta property="fb:app_id" content="103792336624818">
+    <meta property="og:url" content="http://nanceestravellingtable.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nancee's Travelling Table">
+    <meta property="og:image" content="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/fb.png"/>
+    <meta property="og:description" content="Nancee's Travelling Table is a hands-on, gourmet dinner party experience, hosted by Nancee Campbell.">
+    <meta property="og:site_name" content="Nancee's Travelling Table">
+    <meta property="article:publisher" content="https://www.facebook.com/zedworkshop">
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="Nancee's Travelling Table">
+    <meta itemprop="description" content="Nancee's Travelling Table is a hands-on, gourmet dinner party experience, hosted by Nancee Campbell.">
+    <meta itemprop="image" content="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/fb.png">
+
 	<!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
@@ -26,11 +49,29 @@
 
 <body <?php body_class(); ?>>
 
+	<script>
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId      : '103792336624818',
+	      xfbml      : true,
+	      version    : 'v2.3'
+	    });
+	  };
+
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "//connect.facebook.net/en_US/sdk.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	</script>
+
 	<header class="[ bg-white siteheader ]" role="banner">
 		<div class="[ container ]">
 			<div class="[ clearfix ]">
 
-				<div class="[ sm-col sm-col-4 relative ] site-branding">
+				<div class="[ col col-3 sm-col-4 relative ] site-branding">
 					<?php
 						if ( is_front_page() ) : ?>
 							<a class="logo logo-lg" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img alt="<?php bloginfo( 'name' ); ?> logo" src="<?php echo  get_template_directory_uri(); ?>/img/logo.png" /></a>
@@ -42,7 +83,7 @@
 					<!-- <button class="secondary-toggle"><?php _e( 'Menu and widgets', 'twentyfifteen' ); ?></button> -->
 				</div><!-- .site-branding -->
 
-				<nav class="[ sm-col ] main-navigation">
+				<nav class="[ col col-9 sm-col-8 ] main-navigation">
 					<?php if ( has_nav_menu( 'primary' ) ) : ?>
 						<?php
 							// Primary navigation menu.
