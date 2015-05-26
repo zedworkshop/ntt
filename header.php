@@ -80,10 +80,10 @@
 							]);
 
 							// Find the closing bracket of each li and the opening of the link, then all instances of "li"
-							$find = ['><a', 'li'];
+							$find = ['><a', '<li'];
 
 							// Replace the former with nothing (a.k.a. delete) and the latter with "a"
-							$replace = ['', 'a'];
+							$replace = ['', '<a'];
 
 							echo str_replace( $find, $replace, $cleanermenu );
 						?>
