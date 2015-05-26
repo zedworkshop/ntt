@@ -86,6 +86,7 @@ get_header(); ?>
 						wp_list_categories([
 							'orderby' => 'ID',
 							'title_li' => '',
+							'hide_empty' => 0,
 							'child_of' => get_cat_ID( 'Categories' )
 						])
 						?>
@@ -100,6 +101,7 @@ get_header(); ?>
 						wp_list_categories([
 							'orderby' => 'ID',
 							'title_li' => '',
+							'hide_empty' => 0,
 							'child_of' => get_cat_ID( 'Seasons' )
 						])
 						?>
