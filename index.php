@@ -113,4 +113,10 @@ get_header(); ?>
 		</div>
 	</div><!-- .content-area -->
 
+	<div class="[ pattern-d-g mt4 ]">
+		<div class="container py2">
+			<?php get_template_part( 'footer', 'newsletter' ); ?>
+		</div>
+	</div>
+
 <?php get_footer(); ?>

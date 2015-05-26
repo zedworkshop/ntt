@@ -69,13 +69,17 @@
 
 			</div>
 
+			<div class="[ mt4 mb4 center ]">
+				<h4 class="[ h3 brand-primary mb2 ]">Have an upcoming party or event?</h4>
+				<a href="/book/" class="[ button button-outline brand-secondary button-big caps ]">Invite Nancee to host &raquo;</a>
+			</div>
+
 			<div class="break">
 				<div class="break-icon"><img alt="" src="<?php echo get_template_directory_uri(); ?>/dist/img/icon-grey.png" /></div>
 			</div>
 
-			<div class="[ mt4 mb4 center ]">
-				<h4 class="[ h3 brand-primary mb2 ]">Have an upcoming party or event?</h4>
-				<a href="/book/" class="[ button button-outline brand-secondary button-big caps ]">Invite Nancee to host &raquo;</a>
+			<div>
+			<?php get_template_part( 'footer', 'newsletter' ); ?>
 			</div>
 
 		</div>

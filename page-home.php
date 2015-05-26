@@ -104,7 +104,9 @@ Template Name: Home Page
 	</div>
 
 	<div class="[ pattern-d-g ]">
-	<?php get_template_part( 'footer', 'newsletter' ); ?>
+		<div class="container py2">
+			<?php get_template_part( 'footer', 'newsletter' ); ?>
+		</div>
 	</div>
 
 <?php get_footer(); ?>
