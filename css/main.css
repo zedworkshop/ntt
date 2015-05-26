@@ -2498,6 +2498,11 @@ Carousel
   height: auto !important;
   width: auto !important; }
 
+.entry-content ol, .entry-content ul {
+  padding-left: 1.2rem; }
+  .entry-content ol li, .entry-content ul li {
+    margin-bottom: 1rem; }
+
 .preview {
   border-bottom: 1px solid #ddd;
   padding-top: 2rem;
