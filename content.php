@@ -35,39 +35,52 @@
 		</div>
 	</header><!-- .entry-header -->
 
-	<div class="[ clearfix ] entry-content">
+	<div class="[ clearfix ]">
 
 		<?php
 			// Post thumbnail.
 			twentyfifteen_post_thumbnail();
 		?>
 
-		<div class="[ sm-col-right sm-col-9 ] mb4">
+		<div class="[ md-col-right md-col-9 ] mb4">
 
-			<?php
-				/* translators: %s: Name of current post */
-				the_content( sprintf(
-					__( 'Continue reading %s', 'twentyfifteen' ),
-					the_title( '<span class="screen-reader-text">', '</span>', false )
-				) );
+			<div class="[ mb4 ] entry-content">
 
-				wp_link_pages( array(
-					'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfifteen' ) . '</span>',
-					'after'       => '</div>',
-					'link_before' => '<span>',
-					'link_after'  => '</span>',
-					'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>%',
-					'separator'   => '<span class="screen-reader-text">, </span>',
-				) );
-			?>
+				<?php
+					/* translators: %s: Name of current post */
+					the_content( sprintf(
+						__( 'Continue reading %s', 'twentyfifteen' ),
+						the_title( '<span class="screen-reader-text">', '</span>', false )
+					) );
 
-			<footer class="[ full-width ] entry-footer">
-				<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
-			</footer><!-- .entry-footer -->
+					wp_link_pages( array(
+						'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfifteen' ) . '</span>',
+						'after'       => '</div>',
+						'link_before' => '<span>',
+						'link_after'  => '</span>',
+						'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>%',
+						'separator'   => '<span class="screen-reader-text">, </span>',
+					) );
+				?>
+
+				<footer class="[ full-width ] entry-footer">
+					<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
+				</footer><!-- .entry-footer -->
+
+			</div>
+
+			<div class="break">
+				<div class="break-icon"><img alt="" src="<?php echo get_template_directory_uri(); ?>/dist/img/icon-grey.png" /></div>
+			</div>
+
+			<div class="[ mt4 mb4 center ]">
+				<h4 class="[ h3 brand-primary mb2 ]">Have an upcoming party or event?</h4>
+				<a href="/book/" class="[ button button-outline brand-secondary button-big caps ]">Invite Nancee to host &raquo;</a>
+			</div>
 
 		</div>
 
-		<div class="[ sm-col sm-col-3 ]">
+		<div class="[ md-col md-col-3 ]">
 			<!-- social -->
 		</div>
 	</div><!-- .entry-content -->

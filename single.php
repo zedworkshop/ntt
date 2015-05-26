@@ -12,7 +12,7 @@ get_header(); ?>
 	<div id="primary" class="[ container mb4 ]">
 		<div class="clearfix">
 
-			<div class="[ sm-col sm-col-9 px2 ]">
+			<div class="[ md-col md-col-9 px2 ]">
 
 				<?php
 				// Start the loop.
@@ -46,14 +46,53 @@ get_header(); ?>
 
 			</div>
 
-			<aside class="[ sm-col sm-col-3 px2 ]">
+			<aside class="[ md-col md-col-3 px2 ]">
 
-				<div class="[ center ]">
-					<figure class="block mb0">
-						<img class="circle" alt="" src="<?php echo get_template_directory_uri(); ?>/img/headshot-nancee.jpg" />
-					</figure>
-					<h3 class="serif h3 brand-primary [ mt0 mb0 ]">Nancee's Notes</h3>
-					<h4 class="serif default italic brand-primary-light [ mt0 ] px3">Tips, recipes, and stories from the kitchen</h4>
+				<div class="[ clearfix center mb4 ] single-header">
+
+					<div class="[ col col-3 md-col-12 ]">
+						<figure class="[ block mb0 ] single-header__img">
+							<img class="circle" alt="" src="<?php echo get_template_directory_uri(); ?>/dist/img/headshot-nancee.jpg" />
+						</figure>
+					</div>
+
+					<div class="[ col col-9 md-col-12 ]">
+						<h3 class="serif h3 brand-primary [ mt0 mb0 ]">Nancee's Notes</h3>
+						<h4 class="serif default italic brand-primary-light [ mt0 ] px3">Tips, recipes, and stories from the kitchen</h4>
+					</div>
+				</div>
+
+				<div class="">
+
+					<h5 class="[ gray caps mb2 ]">Recent Notes</h5>
+
+					<ul class="[ list-reset mb0 ] recent-posts">
+					<?php
+						$options = [
+							'numberposts' => 3,
+						];
+
+						$recent_posts = wp_get_recent_posts($options);
+
+						foreach( $recent_posts as $recent ) {
+						?>
+
+							<li class="[ mb1 ]">
+								<a class="[ clearfix block ] [ flex flex-center ]" href="<?php echo get_permalink($recent["ID"]); ?>">
+
+									<div class="[ col col-3 ]"><?php echo get_the_post_thumbnail($recent["ID"], 'medium'); ?> </div>
+									<div class="[ col-col-9 px2 ]">
+										<h6 class="[ regular caps mb0 mt0 gray ]"><?php echo get_the_date('F j, Y', $recent['ID']); ?></h6>
+										<h5 class="[ mt1 mb0 ]"><?php echo $recent["post_title"]; ?></h5>
+									</div>
+
+								</a>
+							</li>
+						<?php
+						}
+					?>
+					</ul>
+
 				</div>
 
 			</aside>

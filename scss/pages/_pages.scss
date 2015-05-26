@@ -2,3 +2,21 @@
 	height: auto !important;
 	width: auto !important;
 }
+
+.break {
+	border-top: 1px solid $silver;
+	display: block;
+	height: 1px;
+	text-align: center;
+
+	&-icon {
+		display: inline-block;
+		margin: 0 auto;
+		margin-top: -50%;
+
+		img {
+			padding: 8px;
+			background: #fff;
+		}
+	}
+}
