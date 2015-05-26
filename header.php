@@ -25,13 +25,12 @@
     <!-- Social: Facebook / Open Graph -->
     <meta property="fb:admins" content="586038254"/>
     <meta property="fb:app_id" content="103792336624818">
+
     <meta property="og:url" content="http://nanceestravellingtable.com">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Nancee's Travelling Table">
     <meta property="og:image" content="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/fb.png"/>
     <meta property="og:description" content="Nancee's Travelling Table is a hands-on, gourmet dinner party experience, hosted by Nancee Campbell.">
     <meta property="og:site_name" content="Nancee's Travelling Table">
-    <meta property="article:publisher" content="https://www.facebook.com/zedworkshop">
 
     <!-- Social: Google+ / Schema.org  -->
     <meta itemprop="name" content="Nancee's Travelling Table">
