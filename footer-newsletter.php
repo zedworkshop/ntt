@@ -1,11 +1,9 @@
 <div class="container">
 	<div class="clearfix">
 
-		<div class="[ sm-col-8 px2 py2 mx-auto ] [ center ]">
-
-
-
-		</div>
+		<?php if ( is_active_sidebar( 'footer-widgets' ) ) : ?>
+			<?php dynamic_sidebar( 'footer-widgets' ); ?>
+		<?php endif; ?>
 
 	</div>
 </div>

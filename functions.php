@@ -482,3 +482,16 @@ function ntt_category_meta() {
 	}
 
 }
+
+add_action( 'widgets_init', 'ntt_footer_widgets_init' );
+function ntt_footer_widgets_init() {
+    register_sidebar( array(
+        'name' => __( 'Footer Widgets', 'footer-widgets' ),
+        'id' => 'footer-widgets',
+        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
+        'before_widget' => '<div class="[ sm-col-8 px2 py2 mx-auto ] [ center ] widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '',
+		'after_title'   => '',
+    ));
+}
